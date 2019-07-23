@@ -6,10 +6,15 @@
 
 .App{
     display: grid;   
-    grid-template-columns: 1fr 2fr;
-    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr))
 }
 
 img{
     border: 2px solid black;
+}
+
+@media (max-width: 810px){
+    .App{
+        grid-template-rows: 50vh 50vh;
+    }
 }
