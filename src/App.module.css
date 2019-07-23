@@ -6,14 +6,14 @@
 
 .App{
     display: grid;   
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr))
+    grid-template-columns: repeat(auto-fill, minmax(650px, 1fr))
 }
 
 img{
     border: 2px solid black;
 }
 
-@media (max-width: 810px){
+@media (max-width: 1300px){
     .App{
         grid-template-rows: 50vh 50vh;
     }
